@@ -1,0 +1,94 @@
+
+/*Header*/
+header {
+    display: flex;
+    align-items: center;
+    background-color: #77c1d6;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+/*nav*/
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+#homePageSection{
+    background-image: url("../Images/mykentedress.jpg");
+    background-size: cover;
+    background-position: top;
+
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: auto;
+    min-height: 200vh;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+#homePageText{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 350%;
+    text-align: left;
+    color: rgb(252, 252, 252);
+}
+
+#contactTable{
+    min-width: 500px;
+    max-width: 1000px;
+    font-size: x-large;
+    margin: 0 auto;
+}
+
+td{
+    border-bottom: 1px solid rgb(241, 234, 234);
+    padding-top: 20px;
+}
+
+.valueColumn{
+    padding-right: 20px;
+    text-align: left;
+}
+
+#contactSection{
+    width: 100%;
+    margin: 0 auto;
+    align-content: center;
+    margin-bottom: 50px;
+}

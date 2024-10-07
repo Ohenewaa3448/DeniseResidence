@@ -1,0 +1,229 @@
+Student name: your name 
+Student number: your student number
+Student class: your class
+GitHub Repository: your github repository URL
+GitHub Pages URL: your github pages URL
+
+
+
+
+
+
+Index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>DeniseFashion - Home</title>
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="Images/logo.jpg" alt="logo">
+            
+        </figure>
+        <h1>Denise Royal Kente Designs</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ladies.html">Ladies</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="girls.html">Girls</a></li>
+            <li><a href="boys.html">Boys</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="homePageSection">
+            <p id="homePageText">We design<br>very elegant kente styles<br>for all occasions</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024, Denise Fashion
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+contacts.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>DeniseFashion - Contact</title>
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="Images/logo.jpg" alt="logo" width="50px">
+            
+        </figure>
+        <h1>Denise Royal Kente Designs</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ladies.html">Ladies</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="girls.html">Girls</a></li>
+            <li><a href="boys.html">Boys</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>CONTACT US</h1>
+    <p>Of course we are here for all your questions. Contact one of our employees via the various contact options. Or visit one of our stores to get personal advice</p>
+    <h4>WE ARE HAPPY TO HELP YOU</h4>
+    <section id="contactSection">
+        <table id="contactTable">
+            <tr>
+                <td>Telephone No.</td>
+                <td class="valueColumn">0650874845</td>
+            </tr>
+            <tr>
+                <td>Facebook</td>
+                <td class="valueColumn">denisefashion</td>
+            </tr>
+            <tr>
+                <td>Instagram</td>
+                <td class="valueColumn">denisefashion</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td class="valueColumn">dennysem@hotmail.nl</td>
+            </tr>
+            <tr>
+                <td>WhatApp</td>
+                <td class="valueColumn">0684474449</td>
+             </tr>
+    
+        </table>
+    </section>
+    </main>
+    <footer>
+        &copy; 2024, Denise Fashion
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+styles.css
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #77c1d6;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+#homePageSection{
+    background-image: url("../Images/mykentedress.jpg");
+    background-size: cover;
+    background-position: top;
+
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: auto;
+    min-height: 200vh;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+#homePageText{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 350%;
+    text-align: left;
+    color: rgb(252, 252, 252);
+}
+
+#contactTable{
+    min-width: 500px;
+    max-width: 1000px;
+    font-size: x-large;
+    margin: 0 auto;
+}
+
+td{
+    border-bottom: 1px solid rgb(241, 234, 234);
+    padding-top: 20px;
+}
+
+.valueColumn{
+    padding-right: 20px;
+    text-align: left;
+}
+
+#contactSection{
+    width: 100%;
+    margin: 0 auto;
+    align-content: center;
+    margin-bottom: 50px;
+}
