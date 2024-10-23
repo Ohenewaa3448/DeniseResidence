@@ -1,94 +1,1033 @@
+/* style.css */
 
-/*Header*/
-header {
-    display: flex;
-    align-items: center;
-    background-color: #77c1d6;
-    padding: 20px;
-    border-bottom: 2px solid #ccc;
+body {
+    margin: 0 10%; 
+    padding: 0; 
+    font-family: 'Inter', sans-serif; 
+    background-color: #1E152A;
 }
 
-/*nav*/
-nav ul {
-    list-style: none;
+
+.container {
+    width: 100%; 
+    max-width: 100%; 
+    margin: 0 auto; 
+    position: relative;
+}
+
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #2C2E3C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed;  */
+    top: 0; 
+    left: 0; 
+    z-index: 100; 
+}
+
+
+
+
+.logo {
+    width: 100px; 
+    height: 30px;
+    background-image: url("../images/logo.png"); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    display: flex; 
+    align-items: center; 
+}
+
+.nav {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-item {
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nav-item.active {
+    background-color: #F5F5F5;
+    color: #1E1E1E;
+    font-weight: 700;
+}
+
+.book-now-button {
+    width: 10%;
+    height: 19px;
+    padding: 12px;
+    background-color: #FFA629;
+    border-radius: 8px;
+    border: 1px #2C2C2C solid;
+    color: #F5F5F5;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    align-items: center;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-size: larger;
-    font-weight: bold;
-    color: #333;
-}
-
-nav ul li a:hover {
-    color: #007BFF;
-}
-
-
-/* Footer styling */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 30px;
-    margin-top: 20px;
-}
-
-header img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-}
-
-#homePageSection{
-    background-image: url("../Images/mykentedress.jpg");
-    background-size: cover;
-    background-position: top;
-
-    background-repeat: no-repeat;
-    
+/* Booking Bar Styles */
+.booking-bar {
     width: 100%;
-    height: auto;
-    min-height: 200vh;
-    padding: 20px;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center; 
+}
+
+.booking-bar-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 34px; /* Add padding as needed */
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group label {
+    color: black;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-right: 10px; 
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    background-color: transparent; 
+    color: black;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.divider-vertical {
+    width: 1px;
+    height: 41px;
+    background-color: rgba(0, 0, 0, 0.20);
+    margin: 0 20px; 
+    transform: rotate(90deg);
+}
+
+.check-availability-button {
+    width: 220px;
+    height: 45px;
+    background-color: #FFA629;
     color: white;
-    text-align: center;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-#homePageText{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 350%;
-    text-align: left;
-    color: rgb(252, 252, 252);
+
+/* Divider Styles */
+.divider {
+    width: 8px;
+    height: 9.51px;
+    position: absolute;
+    top: 31px;
+    left: 1260px;
+    border: 2px white solid;
 }
 
-#contactTable{
-    min-width: 500px;
-    max-width: 1000px;
-    font-size: x-large;
-    margin: 0 auto;
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    margin-top: 100px; 
 }
 
-td{
-    border-bottom: 1px solid rgb(241, 234, 234);
-    padding-top: 20px;
+.hero-image-main {
+    width: 70%;
+    height: 585px;
+    top: 110px;
+    position: absolute;
+    background-size: cover; 
+    background-repeat: no-repeat; 
 }
 
-.valueColumn{
-    padding-right: 20px;
-    text-align: left;
+.hero-image-side1 {
+    width:30%;
+    height: 283px;
+    left: 1090px;
+    top: 219px;
+    position: absolute;
 }
 
-#contactSection{
+.hero-image-side2 {
+    width: 250px;
+    height: 283px;
+    left: 1090px;
+    top: 521px;
+    position: absolute;
+}
+
+.view-gallery-button {
+    width: 220px;
+    height: 45px;
+    background-color: #FFA629;
+    position: absolute;
+    left: 1105px;
+    top: 743px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* Welcome Section Styles */
+.welcome {
+  
+}
+
+.section-title {
+    color: #FFA629;
+    font-size: 32px;
+    font-family: 'Cy Grotesk Wide', sans-serif;
+    font-weight: 700;
+}
+
+.section-description {
+    color: white;
+    font-size: 14px;
+    line-height: 1.6; 
+    
+}
+
+
+/* Space Section Styles */
+.space {
+    margin-top: 50px; /* Adjust as needed */
+}
+
+.section-title-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icon-wrapper {
+    margin-left: 20px; /* Adjust spacing as needed */
+}
+
+.icon-circle {
+    width: 58.91px;
+    height: 58.91px;
+    background-color: rgba(255, 166, 41, 0.20);
+    border-radius: 9999px;
+}
+
+.icon-square {
+    width: 19.83px;
+    height: 21.66px;
+    border: 4.53px #FFA629 solid;
+    position: absolute;
+    top: 17.72px;
+    left: 19.83px;
+}
+
+.show-all-button {
+    width: 151px;
+    height: 44px;
+    background-color: rgba(54, 62, 72, 0.60);
+    border-radius: 9px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Cy Grotesk Wide', sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+/* Checkin and Checkout Section Styles */
+.checkin-checkout {
+    margin-top: 50px; /* Adjust as needed */
+    display: flex;
+    justify-content: space-between; /* or however you want to arrange them */
+}
+
+.checkin-checkout .section-title {
+    /* Target the section title specifically within checkin-checkout */
+    margin-bottom: 10px; /* Add some spacing below the title */
+}
+
+.checkin-checkout .section-description {
+    /* Target the description specifically within checkin-checkout */
+    width: auto; /* Reset width so it's content based */
+}
+
+.icon-square-price {
+    width: 32px;
+    height: 32px;
+    border: 3.20px #FFA629 solid;
+    position: absolute;
+    top: 7px;
+    left: 13px;
+}
+
+
+/* Rooms Section Styles */
+.rooms {
+    margin-top: 50px; /* Adjust as needed */
+}
+
+
+/* Attractions Section Styles */
+.attractions {
+    margin-top: 50px;
+}
+
+
+/* Reviews Section Styles */
+.reviews {
+    margin-top: 50px; /* Adjust as needed */
+}
+
+
+/* Contact Us Section Styles */
+.contact-us {
+    margin-top: 50px; /* Adjust as needed */
+    position: relative;
+}
+
+
+
+
+/* Amenities Styles */
+.amenities {
+    width: 1147px;
+    margin-top: 80px; /* Adjust as needed */
+    margin-left: 96px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.amenity-group {
+    width: 219px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.amenity-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px; /* Adjust spacing as needed */
+    border: 2px white solid; /* Default border for all icons */
+}
+
+.bathroom .icon {
+    width: 20px;
+    height: 18px;
+    border: 2px white solid;
+}
+
+.smart-tv .icon {
+    width: 20px;
+    height: 20px;
+    border: 2px white solid;
+}
+
+.dining .icon {
+    width: 18px;
+    height: 20px;
+    border: 2px white solid; 
+}
+
+
+.wifi .icon {
+    width: 20px;
+    height: 15px;
+    border: 2px white solid;
+}
+
+
+.working-space .icon {
+    width: 20px;
+    height: 18px;
+    border: 2px white solid;
+}
+
+
+.microwave .icon {
+    width: 20px;
+    height: 17px;
+    border: 2px white solid;
+}
+
+
+.washer .icon {
+    width: 18px;
+    height: 20px;
+    border: 2px white solid;
+}
+
+
+.parking-space .icon {
+    width: 20px;
+    height: 20px;
+    border: 2px white solid;
+}
+
+.library .icon {
+    width: 17.46px;
+    height: 18px;
+    border: 2px white solid;
+}
+
+/* Location Map Styles */
+.location-map {
+    width: 1261px;
+    height: 637px;
+    position: relative;
+    margin-top: 100px;
+    left: 97px;
+}
+
+.location-map img {
     width: 100%;
-    margin: 0 auto;
-    align-content: center;
-    margin-bottom: 50px;
+    height: 100%;
 }
+
+.map-pin {
+    width: 30px;
+    height: 30px;
+    background-color: #F6AF03;
+    border-radius: 9999px;
+    position: absolute;
+    bottom: 72px; /* Adjust as needed */
+}
+
+.map-pin.primary {
+    left: 45px;
+}
+
+.map-pin.secondary {
+    left: 99px;
+}
+
+.map-pin.tertiary {
+    left: 153px;
+}
+
+/* Shop Items Styles */
+.shop-items {
+    position: absolute;
+    top: 276px;
+    left: 181px;
+    width: 741px;
+    height: 332px;
+}
+
+.shop-item {
+    position: absolute;
+}
+
+.item-card {
+    width: 133px;
+    height: 66px;
+    background-color: white;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.09);
+    border-radius: 16px;
+    padding: 8px;
+    position: relative;
+}
+
+.close-icon {
+    width: 12.41px;
+    height: 12.41px;
+    background-color: black;
+    position: absolute;
+    top: 13.81px;
+    right: 14px;
+}
+
+.item-title {
+    color: black;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+.item-price {
+    color: black;
+    font-size: 18px;
+    font-family: 'Aclonica', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 9999px;
+    position: absolute;
+    bottom: 15px;
+    left: 66px;
+}
+
+/* Review Cards Styles */
+.review-cards {
+    width: 1200px; 
+    margin-top: 50px;
+    margin-left: 100px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-card {
+    width: 592px;
+    height: 216px;
+    background-color: #EAECFF;
+    box-shadow: 0px 5px 14px rgba(8.24, 15.25, 52.06, 0.04);
+    border-radius: 12px;
+    border: 1px #EFF0F6 solid;
+    padding: 20px; 
+    position: relative;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.reviewer-info img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 15px; 
+}
+
+.reviewer-details .reviewer-name {
+    color: #170F49;
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.reviewer-details .reviewer-type {
+    color: #6F6C90;
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Continued from previous CSS */
+
+.review-text {
+    color: #514F6E;
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.review-text .bold {
+    font-weight: 700;
+}
+
+/* Attractions Gallery Styles */
+.attractions-gallery {
+    width: 1240px;
+    height: 312px;
+    margin-top: 50px;
+    margin-left: 100px;
+    display: flex;
+}
+
+.attraction-item {
+    width: 277px;
+    height: 311px;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden; /* To hide overflowing overlay text */
+}
+
+.attraction-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+.attraction-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Adjust height as needed */
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attraction-name {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.attraction-distance {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Footer Styles */
+.footer {
+    width: 100%;
+    background-color: #2C2E3C;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 100px;
+}
+
+.footer-left {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px; 
+}
+
+.footer-logo img {
+    width: 35.07px;
+    height: 40.39px;
+    margin-right: 10px; 
+}
+
+.footer-logo span {
+    color: #F5F5F5;
+    font-size: 14.55px;
+    font-family: 'AppetitePro', sans-serif;
+    font-weight: 700;
+}
+
+.footer-logo .accent-icon {
+    width: 16.54px;
+    height: 14.70px;
+    margin-left: 10px; 
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 192px; 
+}
+
+.footer-link {
+    color: white;
+    font-size: 12px;
+    font-family: 'SF Pro Text', sans-serif;
+    font-weight: 600;
+    text-decoration: none; 
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 12px; 
+}
+
+.social-icons {
+    display: flex;
+    margin-bottom: 20px; 
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-facebook {
+    /* Replace with your Facebook icon */
+    width: 11.25px;
+    height: 18px;
+    background-color: #0C1518; 
+}
+
+.icon-twitter {
+    /* Replace with your Twitter icon */
+    width: 18.46px;
+    height: 15px;
+    background-color: #0C1518;
+}
+
+.icon-instagram {
+    /* Replace with your Instagram icon */
+    width: 18px;
+    height: 18px;
+    background-color: #0C1518;
+}
+
+.icon-linkedin {
+    /* Replace with your LinkedIn icon */
+    width: 18px;
+    height: 18px;
+    background-color: #0C1518;
+}
+
+.copyright {
+    color: white;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.4; 
+}
+
+.footer-right {
+    width: 560px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-nav {
+    /* Style your footer navigation links here */
+}
+
+.footer-nav-link {
+    display: block;
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    text-decoration: none; 
+    margin-bottom: 10px; 
+}
+
+.footer-contact {
+    display: flex;
+}
+
+.footer-contact-section {
+    margin-left: 41px; 
+}
+
+.footer-contact-section h3 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-bottom: 16px; 
+}
+
+.footer-contact-section p {
+    color: white;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+    margin-bottom: 5px; 
+}
+
+/* Contact Form Map Styles (within Location Map) */
+.contact-form-map {
+    width: 462px;
+    height: 504px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px #D9D9D9 solid;
+    padding: 24px;
+    position: absolute;
+    top: 61px;
+    right: 0; 
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-map .form-group {
+    margin-bottom: 24px;
+}
+
+.contact-form-map label {
+    color: #1E1E1E;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form-map input,
+.contact-form-map textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px #D9D9D9 solid;
+    box-sizing: border-box;
+    color: #B3B3B3; /* Placeholder color */
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.contact-form-map button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #2C2C2C;
+    color: #F5F5F5;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.map-background {
+    width: 401px;
+    height: 231px;
+    background-color: rgba(255, 166, 41, 0.39);
+    border-radius: 20px;
+    position: absolute;
+    top: 310px;
+    left: 45px;
+}
+
+/* ... (Previous CSS from before) ... */
+
+/* Room Cards (within Rooms Section) */
+.rooms-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping to multiple rows if needed */
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.room-card {
+    width: 525px; 
+    height: 724px;
+    margin-bottom: 20px; /* Add spacing between cards */
+    position: relative;
+}
+
+.room-card img {
+    width: 100%;
+    height: 637px; /* Adjust as needed */
+    object-fit: cover;
+}
+
+.room-card .room-info {
+    width: 100%;
+    height: 67px;
+    background-color: rgba(54, 62, 72, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add some padding */
+}
+
+.room-card .book-now-button {
+    width: 166px;
+    height: 100%;
+    background-color: #FFA629;
+    color: white;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 0 8px 8px 0; /* Rounded corners on one side */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.room-card .room-details {
+    color: white;
+}
+
+.room-card .room-name {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.room-card .room-price {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+
+
+.contact-form {
+    width: 462px; 
+    height: 504px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px #D9D9D9 solid;
+    position: absolute; 
+    top: 61px;
+    right: 97px; /* Adjust positioning as needed */
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form .form-group {
+    margin-bottom: 24px;
+}
+
+.contact-form label {
+    color: #1E1E1E;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 8px; 
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px #D9D9D9 solid;
+    box-sizing: border-box;
+    color: #B3B3B3; /* Placeholder color */
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+.contact-form button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #2C2C2C;
+    color: #F5F5F5;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* Contact Info (within Contact Us Section) */
+.contact-info {
+    position: absolute;
+    top: 328px;
+    left: 68px;
+    color: white;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    display: inline-block; 
+    vertical-align: middle; /* Align icon with text */
+}
+
+.phone .icon-top {
+    width: 9.01px;
+    height: 9px;
+    background-color: white;
+}
+
+.phone .icon-bottom {
+    width: 17.81px;
+    height: 17.81px;
+    background-color: white;
+}
+
+.email .icon {
+    width: 20px;
+    height: 16px;
+    background-color: white;
+}
+
+.location .icon {
+    width: 16.5px;
+    height: 21px;
+    background-color: white;
+}
+
+
+.contact-background {
+    width: 401px;
+    height: 231px;
+    background-color: rgba(255, 166, 41, 0.39);
+    border-radius: 20px;
+    position: absolute;
+    top: 310px;
+    left: 45px;
+    z-index: -1; /* Place behind content */
+}
+
+
+
