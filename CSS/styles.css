@@ -23,12 +23,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: fixed;  */
+    position: fixed; 
     top: 0; 
     left: 0; 
     z-index: 100; 
 }
-
 
 
 
@@ -64,7 +63,7 @@ body {
 }
 
 .book-now-button {
-    width: 10%;
+    width: 200px;
     height: 19px;
     padding: 12px;
     background-color: #FFA629;
@@ -87,6 +86,7 @@ body {
     background-color: white;
     display: flex;
     align-items: center; 
+    margin-top: 100px; 
 }
 
 .booking-bar-content {
@@ -125,7 +125,7 @@ body {
     height: 41px;
     background-color: rgba(0, 0, 0, 0.20);
     margin: 0 20px; 
-    transform: rotate(90deg);
+    
 }
 
 .check-availability-button {
@@ -154,34 +154,47 @@ body {
 
 /* Hero Section Styles */
 .hero {
-    position: relative;
-    margin-top: 100px; 
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
 }
 
 .hero-image-main {
     width: 70%;
-    height: 585px;
-    top: 110px;
-    position: absolute;
+    height: 600px;
     background-size: cover; 
     background-repeat: no-repeat; 
+    background-position: center;
 }
 
-.hero-image-side1 {
-    width:30%;
-    height: 283px;
-    left: 1090px;
-    top: 219px;
-    position: absolute;
+.hero-side {
+    width: 30%; 
+    display: flex;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    flex-direction: column; 
 }
 
-.hero-image-side2 {
-    width: 250px;
-    height: 283px;
-    left: 1090px;
-    top: 521px;
-    position: absolute;
+.hero-side-top {
+    height: 300px;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+  
 }
+
+.hero-side-bottom {
+    height: 300px;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+  
+}
+
+
+
+
 
 .view-gallery-button {
     width: 220px;
@@ -202,15 +215,13 @@ body {
 
 
 /* Welcome Section Styles */
-.welcome {
-  
-}
 
 .section-title {
     color: #FFA629;
     font-size: 32px;
     font-family: 'Cy Grotesk Wide', sans-serif;
     font-weight: 700;
+    text-align: center; 
 }
 
 .section-description {
@@ -325,17 +336,15 @@ body {
 
 /* Amenities Styles */
 .amenities {
-    width: 1147px;
-    margin-top: 80px; /* Adjust as needed */
-    margin-left: 96px; 
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .amenity-group {
-    width: 219px; /* Adjust as needed */
-    margin-bottom: 20px; /* Adjust as needed */
+    width: 30%; 
+    margin-bottom: 20px; 
     display: flex;
     align-items: center;
     color: white;
@@ -663,7 +672,7 @@ body {
 .footer-links {
     display: flex;
     align-items: center;
-    margin-bottom: 192px; 
+  
 }
 
 .footer-link {
@@ -735,18 +744,21 @@ body {
 }
 
 .footer-right {
-    width: 560px;
+    width: 50%; 
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .footer-nav {
-    /* Style your footer navigation links here */
+    display: flex; 
+    flex-direction: row; 
+    gap: 20px; 
 }
 
 .footer-nav-link {
-    display: block;
+    display: flex; 
+    align-items: center; 
     color: white;
     font-size: 16px;
     font-family: 'Inter', sans-serif;
@@ -755,13 +767,11 @@ body {
     text-decoration: none; 
     margin-bottom: 10px; 
 }
-
 .footer-contact {
-    display: flex;
 }
 
 .footer-contact-section {
-    margin-left: 41px; 
+   
 }
 
 .footer-contact-section h3 {
