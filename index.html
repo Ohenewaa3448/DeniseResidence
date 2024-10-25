@@ -4,26 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denise Fashion</title>
+    <title>Denise Residence</title>
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 <body>
     <div class="container">
         <header class="header">
+            <a href="index.html" class="logo">
 
-            <div class="logo"></div>
+            </a>
             <nav class="nav">
-                <div class="nav-item active">Home</div>
-                <div class="nav-item">Bedrooms</div>
-                <div class="nav-item">Attractions</div>
-                <div class="nav-item">Reviews</div>
-                <div class="nav-item">Shop</div>
-                <div class="nav-item">Contact Us</div>
+                <nav aria-label="Main Navigation">
+                    <a href="index.html" class="nav-item active">Home</a>
+                    <a href="bedrooms.html" class="nav-item">Bedrooms</a>
+                    <a href="attractions.html" class="nav-item">Attractions</a>
+                    <a href="reviews.html" class="nav-item">Reviews</a>
+                    <a href="shop.html" class="nav-item">Shop</a>
+                    <a href="contact.html" class="nav-item">Contact Us</a>
+                </nav>
+
             </nav>
-            <div class="book-now-button">Book Now</div>
-
-
+            <button class="book-now-button">Book Now</button>
         </header>
 
 
@@ -51,15 +53,32 @@
             </div>
 
             <section class="hero">
-                <img class="hero-image-main" src="../images/homepageimages/image.png" alt="Main Hero Image">
+                <div class="image-container">
+                    <img class="hero-image-main" src="../images/homepageimages/image.png" alt="Main Hero Image">
+
+                    <!-- Overlay for items with prices -->
+                    <div class="tag" style="top: 50%; left: 20%;">
+                        <p>Sankyi Pot<br><strong>$18.00</strong> <a href="#">↗</a></p>
+                    </div>
+
+                    <div class="tag" style="top: 10%; left: 40%;">
+                        <p>Osisi Portrait<br><strong>$12.00</strong> <a href="#">↗</a></p>
+                    </div>
+
+                    <div class="tag" style="top: 25%; right: 15%;">
+                        <p>Akan Patchwork<br><strong>$9.99</strong> <a href="#">↗</a></p>
+                    </div>
+                </div>
+
                 <section class="hero-side">
                     <img class="hero-side-top" src="../images/homepageimages/image-1.png" alt="Side Hero Image 1">
-                    <img class="hero-side-bottom" src="../images/homepageimages/image-2.png" alt="Side Hero Image 2">
+                    <div class="bottom-image-container">
+                        <img class="hero-side-bottom" src="../images/homepageimages/image-2.png"
+                            alt="Side Hero Image 2">
+                        <div class="view-gallery-button">View Gallery</div>
+                    </div>
                 </section>
-
-                <div class="view-gallery-button">View Gallery</div>
             </section>
-
             <section class="welcome">
                 <h2 class="section-title">Welcome</h2>
                 <p class="section-description">Indulge in the epitome of Afrocentric luxury at Denise Residence. Immerse
@@ -85,66 +104,77 @@
                 <div class="amenities">
                     <div class="amenity-group">
                         <div class="amenity-icon bathroom">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <img src="../images/svgs/bath.svg" alt="Bathroom Icon">
+                            </div>
                         </div>
                         <p>Bathroom</p>
                     </div>
-
                     <div class="amenity-group">
                         <div class="amenity-icon dining">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <img src="../images/svgs/dining.svg" alt="Dining Icon">
+                            </div>
                         </div>
                         <p>Dining</p>
                     </div>
-
                     <div class="amenity-group">
                         <div class="amenity-icon smart-tv">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <img src="../images/svgs/tv.svg" alt="Smart TV Icon">
+                            </div>
                         </div>
                         <p>Smart TV</p>
                     </div>
-
                     <div class="amenity-group">
                         <div class="amenity-icon wifi">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <img src="../images/svgs/wifi.svg" alt="Wifi Icon">
+                            </div>
                         </div>
                         <p>Wifi</p>
                     </div>
-
                     <div class="amenity-group">
                         <div class="amenity-icon working-space">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <img src="../images/svgs/monitor-smartphone.svg" alt="Working Space Icon">
+                            </div>
                         </div>
                         <p>Working Space</p>
                     </div>
-
                     <div class="amenity-group">
                         <div class="amenity-icon microwave">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <img src="../images/svgs/microwave.svg" alt="Microwave Icon">
+                            </div>
                         </div>
                         <p>Microwave</p>
                     </div>
-
                     <div class="amenity-group">
                         <div class="amenity-icon washer">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <img src="../images/svgs/washing-machine.svg" alt="Washer Icon">
+                            </div>
                         </div>
                         <p>Washer</p>
                     </div>
-
                     <div class="amenity-group">
                         <div class="amenity-icon parking-space">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <img src="../images/svgs/circle-parking.svg" alt="Parking Space Icon">
+                            </div>
                         </div>
                         <p>Parking Space</p>
                     </div>
-
                     <div class="amenity-group">
                         <div class="amenity-icon library">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <img src="../images/svgs/library-big.svg" alt="Library Icon">
+                            </div>
                         </div>
                         <p>Library</p>
                     </div>
+
                 </div>
 
                 <div class="show-all-button">+ Show all</div>
@@ -181,15 +211,6 @@
 
             </section>
 
-
-            <!-- 
-           
-           
-            
-            -->
-
-
-
             <section class="rooms">
                 <div class="section-title-wrapper">
                     <div class="icon-wrapper">
@@ -218,7 +239,36 @@
 
                 </div>
                 <p class="section-description">Explore the nearby attractions for a memorable experience.</p>
-
+                <div class="attractions-gallery">
+                    <div class="attraction-item">
+                        <img src="https://via.placeholder.com/277x311" alt="Attraction 1">
+                        <div class="attraction-overlay">
+                            <p class="attraction-name">Shai Hills</p>
+                            <p class="attraction-distance">20m away</p>
+                        </div>
+                    </div>
+                    <div class="attraction-item">
+                        <img src="https://via.placeholder.com/277x311" alt="Attraction 2">
+                        <div class="attraction-overlay">
+                            <p class="attraction-name">Kukupe Restaurant</p>
+                            <p class="attraction-distance">30m away</p>
+                        </div>
+                    </div>
+                    <div class="attraction-item">
+                        <img src="https://via.placeholder.com/277x311" alt="Attraction 3">
+                        <div class="attraction-overlay">
+                            <p class="attraction-name">Labadi Beach</p>
+                            <p class="attraction-distance">40m away</p>
+                        </div>
+                    </div>
+                    <div class="attraction-item">
+                        <img src="https://via.placeholder.com/277x311" alt="Attraction 4">
+                        <div class="attraction-overlay">
+                            <p class="attraction-name">Shuii Forest</p>
+                            <p class="attraction-distance">20m away</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="show-all-button">+ Show all</div>
             </section>
 
@@ -233,6 +283,31 @@
 
                 </div>
                 <p class="section-description">Insightful feedback from our valued customers</p>
+                <div class="reviews-content">
+                    <div class="review-card">
+                        <div class="reviewer-info">
+                            <img src="https://via.placeholder.com/64x64" alt="Reviewer Avatar">
+                            <div class="reviewer-details">
+                                <p class="reviewer-name">Jon Snow</p>
+                                <p class="reviewer-type">Traveller</p>
+                            </div>
+                        </div>
+                        <p class="review-text">Stayed at <span class="bold">Denise Residence</span>. Amazing experience.
+                            Beautifully designed house with all amenities. Perfect for relaxation. Highly recommend!</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="reviewer-info">
+                            <img src="https://via.placeholder.com/64x64" alt="Reviewer Avatar">
+                            <div class="reviewer-details">
+                                <p class="reviewer-name">Adam Smith</p>
+                                <p class="reviewer-type">Tourist</p>
+                            </div>
+                        </div>
+                        <p class="review-text">Stayed at <span class="bold">Denise Residence.</span> Amazing experience.
+                            Beautifully designed house with all amenities. Perfect for relaxation. Highly recommend!</p>
+                    </div>
+                </div>
 
                 <div class="show-all-button">+ Show all</div>
             </section>
@@ -242,7 +317,6 @@
                     <div class="logo"></div>
                     <div class="footer-links">
                         <a href="#" class="footer-link">More about us</a>
-                        <!-- <div class="dot"></div> -->
                     </div>
                     <div class="social-icons">
                         <div class="social-icon">
@@ -423,36 +497,7 @@
             </div>
         </div>
 
-        <div class="attractions-gallery">
-            <div class="attraction-item">
-                <img src="https://via.placeholder.com/277x311" alt="Attraction 1">
-                <div class="attraction-overlay">
-                    <p class="attraction-name">Shai Hills</p>
-                    <p class="attraction-distance">20m away</p>
-                </div>
-            </div>
-            <div class="attraction-item">
-                <img src="https://via.placeholder.com/277x311" alt="Attraction 2">
-                <div class="attraction-overlay">
-                    <p class="attraction-name">Kukupe Restaurant</p>
-                    <p class="attraction-distance">30m away</p>
-                </div>
-            </div>
-            <div class="attraction-item">
-                <img src="https://via.placeholder.com/277x311" alt="Attraction 3">
-                <div class="attraction-overlay">
-                    <p class="attraction-name">Labadi Beach</p>
-                    <p class="attraction-distance">40m away</p>
-                </div>
-            </div>
-            <div class="attraction-item">
-                <img src="https://via.placeholder.com/277x311" alt="Attraction 4">
-                <div class="attraction-overlay">
-                    <p class="attraction-name">Shuii Forest</p>
-                    <p class="attraction-distance">20m away</p>
-                </div>
-            </div>
-        </div> -->
+        
     </div>
 
 </body>
