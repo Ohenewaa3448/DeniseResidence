@@ -81,7 +81,7 @@ p {
 .logo {
     width: 100px;
     height: 30px;
-    background-image: url("../images/logo.png");
+    background-image: url("../Images/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -446,7 +446,7 @@ p {
 }
 
 .attractions-intro {
-    background-image: url("../images/attractionsimages/heroimage.png");
+    background-image: url("../Images/attractionsimages/heroimage.png");
     background-size: cover;
     background-position: center;
     width: 100vw;
@@ -1250,28 +1250,28 @@ textarea {
 .icon-facebook {
     width: 18.46px;
     height: 18px;
-    background-image: url("../images/footericons/Vector-1.svg");
+    background-image: url("../Images/footericons/Vector-1.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .icon-twitter {
-    background-image: url("../images/footericons/Vector-2.svg");
+    background-image: url("../Images/footericons/Vector-2.svg");
     width: 18.46px;
     height: 18px;
 
 }
 
 .icon-instagram {
-    background-image: url("../images/footericons/Vector-3.svg");
+    background-image: url("../Images/footericons/Vector-3.svg");
     width: 18px;
     height: 18px;
 
 }
 
 .icon-linkedin {
-    background-image: url("../images/footericons/Vector.svg");
+    background-image: url("../Images/footericons/Vector.svg");
     width: 18px;
     height: 18px;
 }
@@ -1668,7 +1668,7 @@ textarea {
 
     .header .logo {
         margin-bottom: 10px;
-        background-image: url("../images/logomobile.png");
+        background-image: url("../Images/logomobile.png");
     }
 
     .header .nav {
