@@ -9,7 +9,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-        margin: 0 3%; 
+        margin: 0 3%;
     }
 }
 
@@ -44,7 +44,7 @@ p {
     color: #FFFFFF;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .mobile-copyright {
         display: block;
     }
@@ -337,7 +337,7 @@ p {
     cursor: pointer;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .view-gallery-button {
         display: none;
     }
@@ -465,6 +465,12 @@ p {
     transform: translateX(-10%);
 }
 
+@media (max-width: 768px) {
+    .attractions-intro {
+        transform: translateX(-3%);
+    }
+}
+
 .hero-content {
     text-align: center;
 
@@ -496,6 +502,14 @@ p {
     justify-content: center;
     gap: 10px;
 }
+
+@media (max-width: 768px) { 
+    .filters form {
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
 
 .filter-input {
     background-color: transparent;
@@ -597,15 +611,15 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 20px; 
+    gap: 20px;
 
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .reviews-content {
         overflow-x: auto;
-        flex-wrap: nowrap; 
-        gap: 20px; 
+        flex-wrap: nowrap;
+        gap: 20px;
     }
 }
 
@@ -735,7 +749,7 @@ p {
 
 .review-container {
     background-color: #fff;
-    padding: 20px 40px;
+  
     border-radius: 10px;
     width: 100%;
     text-align: center;
@@ -807,7 +821,7 @@ textarea {
     align-items: center;
     width: 50%;
     margin: 0 auto;
-    /* Center the form horizontally */
+    padding-bottom: 20px;
 }
 
 
@@ -1020,10 +1034,10 @@ textarea {
     position: relative;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .review-card {
-        width: 300px; 
-        flex-shrink: 0; 
+        width: 300px;
+        flex-shrink: 0;
     }
 }
 
@@ -1919,8 +1933,8 @@ textarea {
 
 @media (max-width: 768px) {
     .product-grid {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 140px 20px; 
+        grid-template-columns: repeat(2, 1fr);
+        gap: 140px 20px;
     }
 }
 
