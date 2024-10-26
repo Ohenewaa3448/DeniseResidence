@@ -9,7 +9,7 @@ body {
 
 
 h1 {
-    color: #FFA629; 
+    color: #FFA629;
     font-family: "Cy Grotesk Wide";
     font-size: 32px;
     font-style: normal;
@@ -21,8 +21,8 @@ h1 {
 
 p {
     text-align: left;
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -111,6 +111,46 @@ p {
     content: '+';
     font-size: 16px;
     font-weight: 500;
+}
+
+/* Hamburger menu styling */
+.hamburger-menu {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Show nav and book-now button on mobile when active */
+.nav.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    /* Adjust based on header height */
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 200px;
+    /* Adjust as needed */
+}
+
+@media (min-width: 768px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .nav,
+    .book-now-button {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav {
+        position: static;
+        flex-direction: row;
+    }
 }
 
 /* Booking Bar Styles */
@@ -303,7 +343,7 @@ p {
 }
 
 .icon-wrapper {
-    margin-left: 20px;
+    margin-right: 20px;
     /* Adjust spacing as needed */
 }
 
@@ -311,17 +351,19 @@ p {
     width: 58.91px;
     height: 58.91px;
     background-color: rgba(255, 166, 41, 0.20);
-    border-radius: 9999px;
+    border-radius: 50%;
+    position: relative;
+    /* Needed to position the icon within */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.icon-square {
+.icon {
     width: 19.83px;
     height: 21.66px;
-    border: 4.53px #FFA629 solid;
-    position: absolute;
-    top: 17.72px;
-    left: 19.83px;
 }
+
 
 .show-all-button {
     width: 160px;
@@ -378,21 +420,22 @@ p {
 }
 
 .attractions-intro {
-    background-image: url("../images/homepageimages/image-2.png");
+    background-image: url("../images/attractionsimages/heroimage.png");
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 50vh;
+    width: 100vw;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     position: relative;
+    transform: translateX(-10%);
 }
 
 .hero-content {
     text-align: center;
-    background: rgba(0, 0, 0, 0.4);
+
     padding: 30px;
     border-radius: 10px;
 }
@@ -410,7 +453,9 @@ p {
     display: flex;
     justify-content: center;
     gap: 10px;
-    /* Add space between inputs */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
     margin-top: 20px;
 }
 
@@ -421,7 +466,7 @@ p {
 }
 
 .filter-input {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: transparent;
     border: none;
     padding: 10px 15px;
     margin: 0 5px;
@@ -451,6 +496,12 @@ p {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .attractions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .attractions {
@@ -601,68 +652,68 @@ p {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .testimonial-rating {
+}
+
+.testimonial-rating {
     display: flex;
     justify-content: start;
     margin-bottom: 10px;
-  }
-  
-  .testimonial-rating .star {
+}
+
+.testimonial-rating .star {
     color: #ffc107;
     font-size: 24px;
-  }
-  
-  .testimonial-text {
+}
+
+.testimonial-text {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 15px;
-  }
-  
-  .testimonial-author {
+}
+
+.testimonial-author {
     display: flex;
     align-items: center;
-  }
-  
-  .testimonial-author-image {
+}
+
+.testimonial-author-image {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
-  }
-  
-  .testimonial-author-name {
+}
+
+.testimonial-author-name {
     font-weight: bold;
-  }
-  
-  .testimonial-author-title {
+}
+
+.testimonial-author-title {
     font-size: 14px;
     color: #6c757d;
-  }
+}
 
-  .review-container {
+.review-container {
     background-color: #fff;
     padding: 20px 40px;
     border-radius: 10px;
     width: 100%;
     text-align: center;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 24px;
     font-weight: bold;
     color: #1A1723;
     margin-bottom: 20px;
-  }
-  
-  .stars {
+}
+
+.stars {
     font-size: 24px;
     color: #1A1723;
     margin-bottom: 20px;
-  }
-  
-  textarea {
+}
+
+textarea {
     width: 100%;
     height: 100px;
     margin-bottom: 20px;
@@ -670,31 +721,31 @@ p {
     border-radius: 5px;
     border: 1px solid #e0e0e0;
     resize: none;
-  }
-  
-  .input-group {
+}
+
+.input-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 15px;
     width: 100%;
-  }
-  
-  .input-group label {
+}
+
+.input-group label {
     display: block;
     font-size: 14px;
     color: #1A1723;
     margin-bottom: 5px;
-  }
-  
-  .input-group input {
+}
+
+.input-group input {
     width: 100%;
     padding: 10px;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
-  }
-  
-  .submit-btn {
+}
+
+.submit-btn {
     background-color: #F4A92F;
     color: white;
     padding: 12px 20px;
@@ -703,19 +754,20 @@ p {
     font-size: 16px;
     cursor: pointer;
     width: 100%;
-  }
-  
-  .submit-btn:hover {
-    background-color: #e89328;
-  }
+}
 
-  .review-form {
+.submit-btn:hover {
+    background-color: #e89328;
+}
+
+.review-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
-    margin: 0 auto; /* Center the form horizontally */
-  }
+    margin: 0 auto;
+    /* Center the form horizontally */
+}
 
 
 
@@ -1023,20 +1075,40 @@ p {
 
 /* Footer Styles */
 .footer {
-    width: 100%;
+    width: 100vw;
     background-color: #2C2E3C;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 100px;
+    position: relative;
+    transform: translateX(-10%);
 
-}
+    /* Mobile styles */
+    flex-direction: column; /* Stack elements vertically on mobile */
+  }
+
+  @media (min-width: 768px) {
+    .footer {
+      flex-direction: row; /* Switch back to row layout on larger screens */
+    }
+  }
+
 
 .footer-left {
     width: 50%;
     display: flex;
     flex-direction: column;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 100px;
     align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    .footer-left {
+        padding-left: 20px; 
+    }
 }
 
 .footer-logo {
@@ -1103,31 +1175,32 @@ p {
 }
 
 .icon-facebook {
-    /* Replace with your Facebook icon */
-    width: 11.25px;
+    width: 18.46px;
     height: 18px;
-    background-color: #0C1518;
+    background-image: url("../images/footericons/Vector-1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .icon-twitter {
-    /* Replace with your Twitter icon */
+    background-image: url("../images/footericons/Vector-2.svg");
     width: 18.46px;
-    height: 15px;
-    background-color: #0C1518;
+    height: 18px;
+
 }
 
 .icon-instagram {
-    /* Replace with your Instagram icon */
+    background-image: url("../images/footericons/Vector-3.svg");
     width: 18px;
     height: 18px;
-    background-color: #0C1518;
+
 }
 
 .icon-linkedin {
-    /* Replace with your LinkedIn icon */
+    background-image: url("../images/footericons/Vector.svg");
     width: 18px;
     height: 18px;
-    background-color: #0C1518;
 }
 
 .copyright {
@@ -1142,13 +1215,22 @@ p {
     width: 50%;
     display: flex;
     flex-direction: column;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 100px;
     align-items: flex-start;
 }
 
 .footer-nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     gap: 20px;
+}
+
+@media (max-width: 768px) { 
+    .footer-nav {
+        flex-direction: column; 
+    }
 }
 
 .footer-nav-link {
@@ -1258,9 +1340,7 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* Allow wrapping to multiple rows if needed */
     margin-top: 20px;
-    /* Adjust spacing as needed */
 }
 
 .room-card {
@@ -1450,11 +1530,23 @@ p {
     width: 100%;
 }
 
+.room-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+}
+
 .room-gallery-image {
-    width: calc(100% / 3 - 10px);
+    width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .room-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .room-images {
@@ -1558,11 +1650,28 @@ p {
         display: none;
     }
 
+    .dates,
+    .prices {
+        width: 100%;
+        float: left;
+
+    }
+
+    @media (min-width: 768px) {
+
+        .dates,
+        .prices {
+            width: 50%;
+
+        }
+    }
+
     .checkin-checkout {
         margin-top: 50px;
         display: flex;
         flex-direction: column;
         gap: 20px;
+        width: 100%;
     }
 
     .section-title {
@@ -1714,7 +1823,7 @@ p {
 .circle {
     width: 250px;
     height: 250px;
-    background-color: #000;
+    background-color: #1E152A;
     border-radius: 50%;
     position: relative;
     display: flex;
@@ -1829,7 +1938,16 @@ p {
     align-items: center;
     height: auto;
     background-color: #fff;
-    border-radius: 20px; 
+    border-radius: 20px;
+
+    
+    flex-direction: column; 
+}
+
+@media (min-width: 768px) {
+    .contact-content {
+        flex-direction: row; 
+    }
 }
 
 .contact-card {
@@ -1838,15 +1956,15 @@ p {
     padding: 40px;
     color: white;
     max-width: 500px;
-    margin: 0 auto 0 30px;
+    margin: 30px;
     position: relative;
     overflow: hidden;
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 
 .form-container {
-    flex-grow: 1; 
-    max-width: 100%; 
+    flex-grow: 1;
+    max-width: 100%;
     margin: 20px;
     padding: 20px;
     border-radius: 8px;
@@ -1956,4 +2074,3 @@ textarea {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
-
