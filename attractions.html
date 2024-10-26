@@ -9,247 +9,176 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <a href="index.html" class="logo">
+    <header class="header">
+        <a href="index.html" class="logo"></a>
+        <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+        <nav aria-label="Main Navigation" class="nav">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="bedrooms.html" class="nav-item">Bedrooms</a>
+            <a href="attractions.html" class="nav-item active">Attractions</a>
+            <a href="reviews.html" class="nav-item">Reviews</a>
+            <a href="shop.html" class="nav-item">Shop</a>
+            <a href="contact.html" class="nav-item">Contact Us</a>
+        </nav>
+        <button class="book-now-button">Book Now</button>
+    </header>
 
-            </a>
-            <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
-            <nav class="nav">
-                <nav aria-label="Main Navigation">
-                    <a href="index.html" class="nav-item">Home</a>
-                    <a href="bedrooms.html" class="nav-item ">Bedrooms</a>
-                    <a href="attractions.html" class="nav-item active">Attractions</a>
-                    <a href="reviews.html" class="nav-item">Reviews</a>
-                    <a href="shop.html" class="nav-item">Shop</a>
-                    <a href="contact.html" class="nav-item">Contact Us</a>
-                </nav>
+    <main>
+        <section style="height: 60px;"></section>
 
-            </nav>
-            <button class="book-now-button">Book Now</button>
-        </header>
-        <main>
-            <div style="height: 60px;"></div>
+        <section class="attractions-intro">
+            <article class="hero-content">
+                <h1 style="color: #fff; text-align: center;">Discover nearby attractions <br> close to Denise's
+                    residence.</h1>
+                
+                <section style="height: 50px;"></section>
 
-            <section class="attractions-intro">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 style="color: #fff; text-align: center;">Discover nearby attractions <br> close to Denise's
-                            residence.</h1>
-                    </div>
+                <form class="filters">
+                    <select name="location" id="location" class="filter-input">
+                        <option value="" disabled selected>Where to?</option>
+                        <option value="city1">City 1</option>
+                        <option value="city2">City 2</option>
+                    </select>
 
-                    <div style="height: 50px;"></div>
+                    <select name="place-type" id="place-type" class="filter-input">
+                        <option value="" disabled selected>Place Type</option>
+                        <option value="restaurant">Restaurant</option>
+                        <option value="park">Park</option>
+                    </select>
 
-                    <div class="filters">
-                        <form>
-                            <select name="location" id="location" class="filter-input">
-                                <option value="" disabled selected>Where to?</option>
-                                <option value="city1">City 1</option>
-                                <option value="city2">City 2</option>
+                    <select name="radius" id="radius" class="filter-input">
+                        <option value="" disabled selected>Radius</option>
+                        <option value="5km">5 km</option>
+                        <option value="10km">10 km</option>
+                    </select>
 
-                            </select>
+                    <button type="submit" class="apply-filter">Submit</button>
+                </form>
+            </article>
+        </section>
 
-                            <select name="place-type" id="place-type" class="filter-input">
-                                <option value="" disabled selected>Place Type</option>
-                                <option value="restaurant">Restaurant</option>
-                                <option value="park">Park</option>
+        <section class="attractions-grid">
+            <article class="attractions">
+                <img src="Images/attractionsimages/attrac1.png" alt="Shai-Hills">
+                <h3>Shai-Hills</h3>
+                <p>20m away</p>
+            </article>
+            <article class="attractions">
+                <img src="Images/attractionsimages/attrac2.png" alt="Shai-Hills">
+                <h3>Shai-Hills</h3>
+                <p>20m away</p>
+            </article>
+            <article class="attractions">
+                <img src="Images/attractionsimages/attrac8.png" alt="Shai-Hills">
+                <h3>Shai-Hills</h3>
+                <p>20m away</p>
+            </article>
+            <article class="attractions">
+                <img src="Images/attractionsimages/attrac4.png" alt="Shai-Hills">
+                <h3>Shai-Hills</h3>
+                <p>20m away</p>
+            </article>
+            <article class="attractions">
+                <img src="Images/attractionsimages/attrac4.png" alt="Shai-Hills">
+                <h3>Shai-Hills</h3>
+                <p>20m away</p>
+            </article>
+            <article class="attractions">
+                <img src="Images/attractionsimages/attrac5.png" alt="Shai-Hills">
+                <h3>Shai-Hills</h3>
+                <p>20m away</p>
+            </article>
+            <article class="attractions">
+                <img src="Images/attractionsimages/attrac6.png" alt="Shai-Hills">
+                <h3>Shai-Hills</h3>
+                <p>20m away</p>
+            </article>
+            <article class="attractions">
+                <img src="Images/attractionsimages/attrac7.png" alt="Shai-Hills">
+                <h3>Shai-Hills</h3>
+                <p>20m away</p>
+            </article>
+            <article class="attractions">
+                <img src="Images/attractionsimages/attrac8.png" alt="Shai-Hills">
+                <h3>Shai-Hills</h3>
+                <p>20m away</p>
+            </article>
+            <article class="attractions">
+                <img src="Images/attractionsimages/attrac9.png" alt="Shai-Hills">
+                <h3>Shai-Hills</h3>
+                <p>20m away</p>
+            </article>
+            <article class="attractions">
+                <img src="Images/attractionsimages/attrac10.png" alt="Shai-Hills">
+                <h3>Shai-Hills</h3>
+                <p>20m away</p>
+            </article>
+        </section>
 
-                            </select>
+        <section style="height: 150px;"></section>
 
-                            <select name="radius" id="radius" class="filter-input">
-                                <option value="" disabled selected>Radius</option>
-                                <option value="5km">5 km</option>
-                                <option value="10km">10 km</option>
+        <nav class="pagination">
+            <a href="#" class="prev">&lt;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <span class="dots">...</span>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#" class="next">&gt;</a>
+        </nav>
 
-                            </select>
-
-                            <button type="submit" class="apply-filter">Submit</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-
-
-
-
-
-
-            <div class="attractions-grid">
-                <div class="attractions">
-                    <img src="Images/attractionsimages/attrac1.png" alt="Shai-Hills">
-                    <div class="attractions-content">
-                        <div class="attractions-info">
-                            <h3>Shai-Hills</h3>
-                            <p>20m away</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="attractions">
-                    <img src="Images/attractionsimages/attrac2.png" alt="Shai-Hills">
-                    <div class="attractions-content">
-                        <div class="attractions-info">
-                            <h3>Shai-Hills</h3>
-                            <p>20m away</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="attractions">
-                    <img src="Images/attractionsimages/attrac8.png" alt="Shai-Hills">
-                    <div class="attractions-content">
-                        <div class="attractions-info">
-                            <h3>Shai-Hills</h3>
-                            <p>20m away</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="attractions">
-                    <img src="Images/attractionsimages/attrac4.png" alt="Shai-Hills">
-                    <div class="attractions-content">
-                        <div class="attractions-info">
-                            <h3>Shai-Hills</h3>
-                            <p>20m away</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="attractions">
-                    <img src="Images/attractionsimages/attrac4.png" alt="Shai-Hills">
-                    <div class="attractions-content">
-                        <div class="attractions-info">
-                            <h3>Shai-Hills</h3>
-                            <p>20m away</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="attractions">
-                    <img src="Images/attractionsimages/attrac5.png" alt="Shai-Hills">
-                    <div class="attractions-content">
-                        <div class="attractions-info">
-                            <h3>Shai-Hills</h3>
-                            <p>20m away</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="attractions">
-                    <img src="Images/attractionsimages/attrac6.png" alt="Shai-Hills">
-                    <div class="attractions-content">
-                        <div class="attractions-info">
-                            <h3>Shai-Hills</h3>
-                            <p>20m away</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="attractions">
-                    <img src="Images/attractionsimages/attrac7.png" alt="Shai-Hills">
-                    <div class="attractions-content">
-                        <div class="attractions-info">
-                            <h3>Shai-Hills</h3>
-                            <p>20m away</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="attractions">
-                    <img src="Images/attractionsimages/attrac8.png" alt="Shai-Hills">
-                    <div class="attractions-content">
-                        <div class="attractions-info">
-                            <h3>Shai-Hills</h3>
-                            <p>20m away</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="attractions">
-                    <img src="Images/attractionsimages/attrac9.png" alt="Shai-Hills">
-                    <div class="attractions-content">
-                        <div class="attractions-info">
-                            <h3>Shai-Hills</h3>
-                            <p>20m away</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="attractions">
-                    <img src="Images/attractionsimages/attrac10.png" alt="Shai-Hills">
-                    <div class="attractions-content">
-                        <div class="attractions-info">
-                            <h3>Shai-Hills</h3>
-                            <p>20m away</p>
-                        </div>
-                    </div>
-                </div>
-               
-            </div>
-
-    </div>
-    <div style="height: 150px;"></div>
-
-
-    <div class="pagination">
-        <a href="#" class="prev">&lt;</a>
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <span class="dots">...</span>
-        <a href="#">9</a>
-        <a href="#">10</a>
-        <a href="#" class="next">&gt;</a>
-    </div>
-
-    <div style="height: 150px;"></div>
-
+        <section style="height: 150px;"></section>
     </main>
+
     <footer class="footer">
-        <div class="footer-left">
+        <section class="footer-left">
             <div class="logo"></div>
-            <div style="height: 10px;"></div>
-
-            <div class="footer-links">
+            <section style="height: 10px;"></section>
+            <section class="footer-links">
                 <a href="#" class="footer-link">More about us</a>
-            </div>
-            <div style="height: 100px;"></div>
-
-            <div class="social-icons">
-                <div class="social-icon">
+            </section>
+            <section style="height: 100px;"></section>
+            <section class="social-icons">
+                <section class="social-icon">
                     <div class="icon-facebook"></div>
-                </div>
-                <div class="social-icon">
+                </section>
+                <section class="social-icon">
                     <div class="icon-twitter"></div>
-                </div>
-                <div class="social-icon">
+                </section>
+                <section class="social-icon">
                     <div class="icon-instagram"></div>
-                </div>
-                <div class="social-icon">
+                </section>
+                <section class="social-icon">
                     <div class="icon-linkedin"></div>
-                </div>
-            </div>
+                </section>
+            </section>
             <p class="copyright">© 2024— Copyright<br> Denise Residence<br>All Rights reserved</p>
-        </div>
-        <div class="footer-right">
-            <div class="footer-nav">
+        </section>
+        <section class="footer-right">
+            <section class="footer-nav">
                 <a href="index.html" class="footer-nav-link">Home</a>
                 <a href="bedrooms.html" class="footer-nav-link">Bedrooms</a>
                 <a href="attractions.html" class="footer-nav-link">Attractions</a>
                 <a href="reviews.html" class="footer-nav-link">Reviews</a>
                 <a href="shop.html" class="footer-nav-link">Shop</a>
-            </div>
-            <div style="height: 100px;"></div>
-
-            <div class="footer-contact">
-                <div class="footer-contact-section">
+            </section>
+            <section style="height: 100px;"></section>
+            <section class="footer-contact">
+                <section class="footer-contact-section">
                     <h3>Contact Us</h3>
                     <p>+233 552955970</p>
                     <p>dennysem@hotmail.nl</p>
-                </div>
-                <div style="height: 30px;"></div>
-
-                <div class="footer-contact-section">
+                </section>
+                <section style="height: 30px;"></section>
+                <section class="footer-contact-section">
                     <h3>Location</h3>
-                    <p>Achiaman Estaste, Accra , Ghana</p>
-                </div>
-            </div>
-            <p class="mobile-copyright">© 2024— Copyright<br> Denise Residence<br>All Rights reserved</p>
-        </div>
+                    <p>Achimota, Accra<br>Ghana</p>
+                </section>
+            </section>
+        </section>
     </footer>
-
-    </div>
 </body>
 
 </html>
